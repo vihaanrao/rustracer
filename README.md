@@ -1,56 +1,45 @@
-# Rust Network Monitor
+# Rust Ray Tracer
 
 ## Group Name
-NetWorks
+Rust Ray Tracer
 
 ## Group members - NetID
 Vihaan Rao - vihaanr2 <br />
 Rohit Choudhary - rohitkc2
 
 ## Project Intro
-Our MVP is a Rust-based network monitoring tool. It is designed to help network administrators or developers monitor network traffic and diagnose network problems. The main goals and objectives of our project are:
+Our MVP is a Rust-based ray tracer. It is designed to render 3D scenes with realistic lighting and reflections. The main goals and objectives of our project are:
 
-- Monitor network traffic in real-time.
-- Display information about network performance, including bandwidth usage, packet loss, and latency.
-- Support multiple network interfaces for monitoring.
-- Allow customization of monitoring parameters such as time intervals and network interface selection.
-- Provide a simple, user-friendly command-line interface (CLI) for ease of use.
+- Implement a basic ray tracer that can render spheres and diffuse lighting.
+- Add more features such as shadows, reflections, and refraction.
+- Optimize the ray tracer for performance.
+- Display the output in a window or save it to a file.
+- Utilize Rust's modern features such as traits and macros to improve code quality and maintainability.
 
-We chose to work on this project because we believe that a reliable and efficient network monitoring tool can be useful in various industries and fields. We also wanted to challenge ourselves to learn more about network protocols and Rust programming language.
+We chose to work on this project because we believe that building a ray tracer from scratch is a challenging and rewarding task that can help us improve our Rust programming skills.
 
 ## Technical overview
-NetWorks is composed of the following major components
+Our Rust ray tracer is composed of the following major components:
 
--  Network monitoring module: This module will use Rust's networking libraries to monitor network traffic on one or more network interfaces.
-- Performance metrics module: This module will analyze network traffic data and calculate performance metrics such as bandwidth usage, packet loss, and latency.
-- User interface module: This module will provide a user-friendly command-line interface (CLI) for users to interact with the tool.
-- Configuration module: This module will allow users to customize monitoring parameters such as time intervals and network interface selection.
+- Scene module: This module defines the 3D scene to be rendered, including the camera, objects, and lighting.
+- Ray module: This module defines the ray tracing algorithm and handles intersections between rays and objects in the scene.
+- Output module: This module handles the output of the rendered image, either by displaying it in a window or saving it to a file.
+- Optimization module: This module optimizes the ray tracer for performance, using techniques such as multithreading and spatial data structures.
 
 ## Checkpoints
 ### Checkpoint 1:
 
-- Implement network monitoring module to capture network traffic data.
-- Implement performance metrics module to analyze captured network traffic data.
-- Display basic performance metrics on the CLI.
+- Implement the basic ray tracer that can render spheres and diffuse lighting.
+- Display the output in a window or save it to a file.
 
 ### Checkpoint 2:
 
-- Add support for multiple network interfaces.
-- Allow customization of monitoring parameters such as time intervals and network interface selection.
-- Display advanced performance metrics on the CLI.
+- Add more features such as shadows, reflections, and refraction.
+- Optimize the ray tracer for performance using multithreading.
 
 ### Checkpoint 3:
 
 - Refactor code to improve readability and maintainability.
-- Add support for logging and error handling.
-- Create user documentation and help manual.
+- Add more advanced features such as texture mapping and anti-aliasing.
+- Experiment with different rendering techniques such as path tracing.
 
-## Possible Challenges
-
-- Learning and working with Rust's networking libraries.
-- Designing an efficient and reliable performance metrics module.
-- Creating a user-friendly CLI interface.
-
-## References
-- [Wireshark](https://www.wireshark.org/)
-- [ntopng](https://www.ntop.org/products/traffic-analysis/ntop/)
