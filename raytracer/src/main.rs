@@ -6,7 +6,7 @@ fn write_ppm(w: u32, h: u32, max_pixel_value: u32) { //simple ppm writer for tes
     println!("P3\n{} {}\n{}", w, h, max_pixel_value);
 
     for i in (0..h).rev() {
-        for j in (0..w) {
+        for j in 0..w {
             let r = j as f64 / (w - 1) as f64;
             let g = i as f64 / (h - 1) as f64;
             let b = 0.25;
@@ -29,5 +29,9 @@ fn main() { //main function
 
     write_ppm(width, height, max_pixel_value);
 
-    let v = Vec3::new();
+    let v: Vec3 = Vec3::new(1f32, 2f32, 6f32);
+    let v2: Vec3 = Vec3::new(2f32, 6f32, 8f32);
+
+    let v3 = v + v2;
+    println!("added v1 and v2: {:?}", v3);
 }
