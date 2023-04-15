@@ -12,7 +12,7 @@ impl Vec3 {
          }
     }
 }
-//implement override for + operator
+//implement fn overload for + operator
 impl ops::Add for Vec3 { 
     type Output = Vec3;
 
