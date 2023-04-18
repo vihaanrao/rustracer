@@ -1,6 +1,8 @@
 mod vec3;
+mod ray;
 
 use vec3::Vec3;
+use ray::Ray;
 
 fn write_ppm(w: u32, h: u32, max_pixel_value: u32) { //simple ppm writer for testing
     println!("P3\n{} {}\n{}", w, h, max_pixel_value);
