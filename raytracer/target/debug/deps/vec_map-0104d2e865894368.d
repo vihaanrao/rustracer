@@ -1,0 +1,7 @@
+/workspaces/rustnetworkmonitor/raytracer/target/debug/deps/vec_map-0104d2e865894368.rmeta: /home/codespace/.cargo/registry/src/github.com-1ecc6299db9ec823/vec_map-0.8.2/src/lib.rs
+
+/workspaces/rustnetworkmonitor/raytracer/target/debug/deps/libvec_map-0104d2e865894368.rlib: /home/codespace/.cargo/registry/src/github.com-1ecc6299db9ec823/vec_map-0.8.2/src/lib.rs
+
+/workspaces/rustnetworkmonitor/raytracer/target/debug/deps/vec_map-0104d2e865894368.d: /home/codespace/.cargo/registry/src/github.com-1ecc6299db9ec823/vec_map-0.8.2/src/lib.rs
+
+/home/codespace/.cargo/registry/src/github.com-1ecc6299db9ec823/vec_map-0.8.2/src/lib.rs:
