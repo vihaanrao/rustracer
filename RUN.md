@@ -12,9 +12,7 @@ Follow these steps to set up and run the project on your local machine:
 First, clone the project repository from GitHub:
 
 ```
-
 git clone https://github.com/yourusername/ray-tracing-in-rust.git
-
 ```
 
 Replace `yourusername` with your GitHub username, and make sure the repository URL is correct.
@@ -24,7 +22,6 @@ Replace `yourusername` with your GitHub username, and make sure the repository U
 Navigate to the project's root directory:
 
 ```
-
 cd ray-tracing-in-rust
 ```
 
@@ -34,9 +31,7 @@ cd ray-tracing-in-rust
 Build the project using the following command:
 
 
-
 ```
-
 cargo build --release
 ```
 
@@ -47,7 +42,6 @@ This will compile the project with optimizations, and it may take a few minutes 
 Run the project using the following command:
 
 ```
-
 cargo run --release
 ```
 
