@@ -38,7 +38,7 @@ impl Sphere {
         }
         let point = ray.at(root);
         let normal = (point - self.center) / self.radius;
-        //Update any calls to Hit::new to include the material argument
+        //update any calls to Hit::new to include the material argument
         Some(Hit::new(root, point, normal, self.material))
     }
 }
