@@ -17,6 +17,9 @@ git clone https://github.com/yourusername/ray-tracing-in-rust.git
 
 Replace `yourusername` with your GitHub username, and make sure the repository URL is correct.
 
+> :warning: **If you are downloading the zip file*: Be very careful when extracting it as it is very large!
+
+
 ## Step 2: Change to the project directory
 
 Navigate to the project's root directory:
