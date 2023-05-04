@@ -7,6 +7,10 @@ pub struct Vec3 {
 }
 
 impl Vec3 {
+    pub fn reflect(&self, n: &Vec3) -> Vec3 {
+        *self - 2.0 * self.dot(*n) * *n
+    }
+
     pub fn new(x: f64, y: f64, z: f64) -> Self {
         Self { e: [x, y, z] }
     }
@@ -34,6 +38,8 @@ impl Vec3 {
     pub fn unit_vector(self) -> Self {
         self / self.length()
     }
+
+    
 }
 
 impl Add for Vec3 {
@@ -125,3 +131,4 @@ impl Vec3 {
         self * other
     }
 }
+

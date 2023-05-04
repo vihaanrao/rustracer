@@ -1,0 +1,12 @@
+/home/vihaanrao/rustracer/target/debug/deps/sctk_adwaita-1f834f31cb073690.rmeta: /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/lib.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/theme.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/buttons.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/parts.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/pointer.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/surface.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/title.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/title/crossfont_renderer.rs
+
+/home/vihaanrao/rustracer/target/debug/deps/sctk_adwaita-1f834f31cb073690.d: /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/lib.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/theme.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/buttons.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/parts.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/pointer.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/surface.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/title.rs /home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/title/crossfont_renderer.rs
+
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/lib.rs:
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/theme.rs:
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/buttons.rs:
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/parts.rs:
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/pointer.rs:
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/surface.rs:
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/title.rs:
+/home/vihaanrao/.cargo/registry/src/github.com-1ecc6299db9ec823/sctk-adwaita-0.4.3/src/title/crossfont_renderer.rs:

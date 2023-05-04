@@ -1,27 +1,13 @@
+use rustracer::{Vec3, Ray, Hit, Sphere, Material, Texture, write_color, Write};
 use std::fs::File;
 use std::io::BufWriter;
 
-mod vec3;
-mod ray;
-mod hit;
-mod sphere;
-mod material;
-mod ppm;
-
-use vec3::Vec3;
-use ray::Ray;
-use hit::Hit;
-use sphere::Sphere;
-use material::{Material, Texture};
-use ppm::write_color;
-use std::io::Write;
-// use std::ops::AddAssign;
 
 
 fn main() -> std::io::Result<()> {
     // Image render settings
     const ASPECT_RATIO: f64 = 16.0 / 9.0;
-    const IMAGE_WIDTH: u32 = 1280;
+    const IMAGE_WIDTH: u32 = 640;
     const IMAGE_HEIGHT: u32 = (IMAGE_WIDTH as f64 / ASPECT_RATIO) as u32;
     const SAMPLES_PER_PIXEL: u32 = 100;
 
@@ -33,11 +19,28 @@ fn main() -> std::io::Result<()> {
             Material::new(Texture::SolidColor(Vec3::new(0.7, 0.3, 0.3))),
         ),
         Sphere::new(
-            Vec3::new(0.0, -100.5, -1.0),
-            100.0,
-            Material::new(Texture::SolidColor(Vec3::new(0.8, 0.8, 0.0))),
+            Vec3::new(1.0, 0.0, -1.0),
+            0.5,
+            Material::new(Texture::Metal(Vec3::new(0.8, 0.6, 0.2), 0.1)),
+        ),
+        Sphere::new(
+            Vec3::new(-1.0, 0.0, -1.0),
+            0.5,
+            Material::new(Texture::Metal(Vec3::new(0.8, 0.8, 0.8), 0.3)),
+        ),
+        Sphere::new(
+            Vec3::new(-1.0, 0.0, -1.0),
+            -0.45,
+            Material::new(Texture::Dielectric(1.5)),
+        ),
+        // Add a glass sphere
+        Sphere::new(
+            Vec3::new(0.0, 0.0, -1.5),
+            0.5,
+            Material::new(Texture::Glass(1.5, 0.9)),
         ),
     ];
+    
 
     // Camera
     let viewport_height = 2.0;
@@ -81,9 +84,10 @@ fn ray_color(ray: Ray, world: &[Sphere], depth: u32) -> Vec3 {
     }
 
     if let Some(hit) = hit_world(ray, world, 0.001, f64::INFINITY) {
-        let target = hit.point + hit.normal + random_in_unit_sphere();
-        let attenuation = hit.material.color(0.0, 0.0, hit.point);
-        return attenuation.component_mul(ray_color(Ray::new(hit.point, target - hit.point), world, depth + 1));
+        if let Some((attenuation, scattered)) = hit.material.scatter(ray, &hit) {
+            return attenuation * ray_color(scattered, world, depth + 1);
+        }
+        return Vec3::new(0.0, 0.0, 0.0);
     }
 
     let unit_direction = ray.direction.unit_vector();
