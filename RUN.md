@@ -1,4 +1,4 @@
-# How to run the Ray Tracing in Rust project
+# How to run RustTracer
 
 Follow these steps to set up and run the project on your local machine:
 
