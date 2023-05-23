@@ -25,7 +25,7 @@ Replace `yourusername` with your GitHub username, and make sure the repository U
 Navigate to the project's root directory:
 
 ```
-cd ray-tracing-in-rust
+cd rustracer
 ```
 
 
@@ -54,4 +54,4 @@ This will execute the compiled binary, generate the output image (output.ppm), a
 
 You can view the output image (output.ppm) using an image viewer that supports the PPM format, or you can convert it to a more common format like JPEG or PNG using an image conversion tool.
 
-That's it! You have successfully built and run the Ray Tracing in Rust project.
+That's it! You have successfully built and run the `Rustracer` project.
