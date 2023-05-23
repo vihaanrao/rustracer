@@ -12,7 +12,7 @@ Follow these steps to set up and run the project on your local machine:
 First, clone the project repository from GitHub:
 
 ```
-git clone https://github.com/yourusername/ray-tracing-in-rust.git
+git clone https://github.com/yourusername/rustracer.git
 ```
 
 Replace `yourusername` with your GitHub username, and make sure the repository URL is correct.
